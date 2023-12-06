@@ -33,7 +33,7 @@ export const App = () => {
     <>
       {isAuthenticated ? (
         <>
-          <p>'認証済み！'</p>
+          <p>認証済み！</p>
           <button onClick={() => handleLogout()}>ログアウト</button>
           <button onClick={() => handleGetMe()}>GETME!</button>
           {graphData ? (
@@ -46,7 +46,7 @@ export const App = () => {
         </>
       ) : (
         <>
-          <p>'未認証'</p>
+          <p>未認証</p>
           <button onClick={() => handleLogin()}>ログイン</button>
         </>
       )}

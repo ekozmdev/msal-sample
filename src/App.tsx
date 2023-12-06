@@ -25,7 +25,6 @@ export const App = () => {
       })
       .then((response) => {
         getMsGraphMe(response.accessToken).then((data) => {
-          console.log(data.data)
           setGraphData(data.data)
         })
       })
